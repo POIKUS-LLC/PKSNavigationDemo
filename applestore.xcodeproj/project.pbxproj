@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C65646CE2CA7F394007D940E /* OnboardingUI in Frameworks */ = {isa = PBXBuildFile; productRef = C65646CD2CA7F394007D940E /* OnboardingUI */; };
+		C6B0167D2CAD1E4C003DA202 /* OnboardingProtocol in Frameworks */ = {isa = PBXBuildFile; productRef = C6B0167C2CAD1E4C003DA202 /* OnboardingProtocol */; };
+		C6B0167F2CAD1E4C003DA202 /* OnboardingUI in Frameworks */ = {isa = PBXBuildFile; productRef = C6B0167E2CAD1E4C003DA202 /* OnboardingUI */; };
+		C6B016812CAD1E4C003DA202 /* PKSTheme in Frameworks */ = {isa = PBXBuildFile; productRef = C6B016802CAD1E4C003DA202 /* PKSTheme */; };
+		C6F2B6952CAD209400CB3E0B /* PKSDependencyEngine in Frameworks */ = {isa = PBXBuildFile; productRef = C6F2B6942CAD209400CB3E0B /* PKSDependencyEngine */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		C656462D2CA70110007D940E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,7 +35,22 @@
 		C656461C2CA7010F007D940E /* applestore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = applestore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C656462C2CA70110007D940E /* applestoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = applestoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C65646362CA70110007D940E /* applestoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = applestoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C65646B22CA7E0AC007D940E /* OnboardingDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnboardingDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6F2B6A82CAD470500CB3E0B /* AccountDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccountDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6F2B71C2CB0FBA600CB3E0B /* ProductsDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductsDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6F2B72A2CB1006900CB3E0B /* PKSCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = PKSCore; path = Packages/Core/PKSCore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C656465A2CA70C8A007D940E /* Exceptions for "Packages" folder in "applestore" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Core/PKSTheme,
+				Features/Onboarding,
+			);
+			target = C656461B2CA7010F007D940E /* applestore */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C656461E2CA7010F007D940E /* applestore */ = {
@@ -45,6 +68,29 @@
 			path = applestoreUITests;
 			sourceTree = "<group>";
 		};
+		C65646572CA70C3C007D940E /* Packages */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C656465A2CA70C8A007D940E /* Exceptions for "Packages" folder in "applestore" target */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		C65646B32CA7E0AC007D940E /* OnboardingDev */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = OnboardingDev;
+			sourceTree = "<group>";
+		};
+		C6F2B6A92CAD470500CB3E0B /* AccountDev */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AccountDev;
+			sourceTree = "<group>";
+		};
+		C6F2B71D2CB0FBA600CB3E0B /* ProductsDev */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ProductsDev;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +98,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6B016812CAD1E4C003DA202 /* PKSTheme in Frameworks */,
+				C6F2B6952CAD209400CB3E0B /* PKSDependencyEngine in Frameworks */,
+				C6B0167D2CAD1E4C003DA202 /* OnboardingProtocol in Frameworks */,
+				C6B0167F2CAD1E4C003DA202 /* OnboardingUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,16 +119,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C65646AF2CA7E0AC007D940E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C65646CE2CA7F394007D940E /* OnboardingUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6F2B6A52CAD470500CB3E0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6F2B7192CB0FBA600CB3E0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		C65646132CA7010F007D940E = {
 			isa = PBXGroup;
 			children = (
+				C6F2B72A2CB1006900CB3E0B /* PKSCore */,
 				C656461E2CA7010F007D940E /* applestore */,
 				C656462F2CA70110007D940E /* applestoreTests */,
 				C65646392CA70110007D940E /* applestoreUITests */,
+				C65646A62CA70F3E007D940E /* DevelopmentTargets */,
 				C656461D2CA7010F007D940E /* Products */,
+				C65646572CA70C3C007D940E /* Packages */,
+				C65646C02CA7E0C8007D940E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,8 +164,28 @@
 				C656461C2CA7010F007D940E /* applestore.app */,
 				C656462C2CA70110007D940E /* applestoreTests.xctest */,
 				C65646362CA70110007D940E /* applestoreUITests.xctest */,
+				C65646B22CA7E0AC007D940E /* OnboardingDev.app */,
+				C6F2B6A82CAD470500CB3E0B /* AccountDev.app */,
+				C6F2B71C2CB0FBA600CB3E0B /* ProductsDev.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C65646A62CA70F3E007D940E /* DevelopmentTargets */ = {
+			isa = PBXGroup;
+			children = (
+				C6F2B71D2CB0FBA600CB3E0B /* ProductsDev */,
+				C6F2B6A92CAD470500CB3E0B /* AccountDev */,
+				C65646B32CA7E0AC007D940E /* OnboardingDev */,
+			);
+			path = DevelopmentTargets;
+			sourceTree = "<group>";
+		};
+		C65646C02CA7E0C8007D940E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,9 +205,14 @@
 			);
 			fileSystemSynchronizedGroups = (
 				C656461E2CA7010F007D940E /* applestore */,
+				C65646572CA70C3C007D940E /* Packages */,
 			);
 			name = applestore;
 			packageProductDependencies = (
+				C6B0167C2CAD1E4C003DA202 /* OnboardingProtocol */,
+				C6B0167E2CAD1E4C003DA202 /* OnboardingUI */,
+				C6B016802CAD1E4C003DA202 /* PKSTheme */,
+				C6F2B6942CAD209400CB3E0B /* PKSDependencyEngine */,
 			);
 			productName = applestore;
 			productReference = C656461C2CA7010F007D940E /* applestore.app */;
@@ -163,6 +264,73 @@
 			productReference = C65646362CA70110007D940E /* applestoreUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		C65646B12CA7E0AC007D940E /* OnboardingDev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C65646BD2CA7E0AD007D940E /* Build configuration list for PBXNativeTarget "OnboardingDev" */;
+			buildPhases = (
+				C65646AE2CA7E0AC007D940E /* Sources */,
+				C65646AF2CA7E0AC007D940E /* Frameworks */,
+				C65646B02CA7E0AC007D940E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C65646B32CA7E0AC007D940E /* OnboardingDev */,
+			);
+			name = OnboardingDev;
+			packageProductDependencies = (
+				C65646CD2CA7F394007D940E /* OnboardingUI */,
+			);
+			productName = OnboardingDev;
+			productReference = C65646B22CA7E0AC007D940E /* OnboardingDev.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C6F2B6A72CAD470500CB3E0B /* AccountDev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6F2B6C92CAD470600CB3E0B /* Build configuration list for PBXNativeTarget "AccountDev" */;
+			buildPhases = (
+				C6F2B6A42CAD470500CB3E0B /* Sources */,
+				C6F2B6A52CAD470500CB3E0B /* Frameworks */,
+				C6F2B6A62CAD470500CB3E0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C6F2B6A92CAD470500CB3E0B /* AccountDev */,
+			);
+			name = AccountDev;
+			packageProductDependencies = (
+			);
+			productName = AccountDev;
+			productReference = C6F2B6A82CAD470500CB3E0B /* AccountDev.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C6F2B71B2CB0FBA600CB3E0B /* ProductsDev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6F2B7272CB0FBA700CB3E0B /* Build configuration list for PBXNativeTarget "ProductsDev" */;
+			buildPhases = (
+				C6F2B7182CB0FBA600CB3E0B /* Sources */,
+				C6F2B7192CB0FBA600CB3E0B /* Frameworks */,
+				C6F2B71A2CB0FBA600CB3E0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C6F2B71D2CB0FBA600CB3E0B /* ProductsDev */,
+			);
+			name = ProductsDev;
+			packageProductDependencies = (
+			);
+			productName = ProductsDev;
+			productReference = C6F2B71C2CB0FBA600CB3E0B /* ProductsDev.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +352,15 @@
 						CreatedOnToolsVersion = 16.0;
 						TestTargetID = C656461B2CA7010F007D940E;
 					};
+					C65646B12CA7E0AC007D940E = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					C6F2B6A72CAD470500CB3E0B = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					C6F2B71B2CB0FBA600CB3E0B = {
+						CreatedOnToolsVersion = 16.0;
+					};
 				};
 			};
 			buildConfigurationList = C65646172CA7010F007D940E /* Build configuration list for PBXProject "applestore" */;
@@ -195,6 +372,11 @@
 			);
 			mainGroup = C65646132CA7010F007D940E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C65646632CA70E78007D940E /* XCLocalSwiftPackageReference "Packages/Features/Onboarding" */,
+				C65646A72CA70F94007D940E /* XCLocalSwiftPackageReference "Packages/Core/PKSTheme" */,
+				C6F2B6932CAD208A00CB3E0B /* XCRemoteSwiftPackageReference "PKSDependencyEngine" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C656461D2CA7010F007D940E /* Products */;
 			projectDirPath = "";
@@ -203,6 +385,9 @@
 				C656461B2CA7010F007D940E /* applestore */,
 				C656462B2CA70110007D940E /* applestoreTests */,
 				C65646352CA70110007D940E /* applestoreUITests */,
+				C65646B12CA7E0AC007D940E /* OnboardingDev */,
+				C6F2B6A72CAD470500CB3E0B /* AccountDev */,
+				C6F2B71B2CB0FBA600CB3E0B /* ProductsDev */,
 			);
 		};
 /* End PBXProject section */
@@ -229,6 +414,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C65646B02CA7E0AC007D940E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6F2B6A62CAD470500CB3E0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6F2B71A2CB0FBA600CB3E0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -247,6 +453,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C65646322CA70110007D940E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C65646AE2CA7E0AC007D940E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6F2B6A42CAD470500CB3E0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6F2B7182CB0FBA600CB3E0B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -404,6 +631,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -433,6 +661,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -518,6 +747,180 @@
 			};
 			name = Release;
 		};
+		C65646BE2CA7E0AD007D940E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DevelopmentTargets/OnboardingDev/Preview Content\"";
+				DEVELOPMENT_TEAM = JGA4594YWM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poikus.demo.OnboardingDev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C65646BF2CA7E0AD007D940E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DevelopmentTargets/OnboardingDev/Preview Content\"";
+				DEVELOPMENT_TEAM = JGA4594YWM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poikus.demo.OnboardingDev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C6F2B6CA2CAD470600CB3E0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DevelopmentTargets/AccountDev/Preview Content\"";
+				DEVELOPMENT_TEAM = JGA4594YWM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poikus.demo.AccountDev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C6F2B6CB2CAD470600CB3E0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DevelopmentTargets/AccountDev/Preview Content\"";
+				DEVELOPMENT_TEAM = JGA4594YWM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poikus.demo.AccountDev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C6F2B7282CB0FBA700CB3E0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DevelopmentTargets/ProductsDev/Preview Content\"";
+				DEVELOPMENT_TEAM = JGA4594YWM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poikus.demo.ProductsDev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C6F2B7292CB0FBA700CB3E0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DevelopmentTargets/ProductsDev/Preview Content\"";
+				DEVELOPMENT_TEAM = JGA4594YWM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poikus.demo.ProductsDev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -557,7 +960,83 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		C65646BD2CA7E0AD007D940E /* Build configuration list for PBXNativeTarget "OnboardingDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C65646BE2CA7E0AD007D940E /* Debug */,
+				C65646BF2CA7E0AD007D940E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6F2B6C92CAD470600CB3E0B /* Build configuration list for PBXNativeTarget "AccountDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6F2B6CA2CAD470600CB3E0B /* Debug */,
+				C6F2B6CB2CAD470600CB3E0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6F2B7272CB0FBA700CB3E0B /* Build configuration list for PBXNativeTarget "ProductsDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6F2B7282CB0FBA700CB3E0B /* Debug */,
+				C6F2B7292CB0FBA700CB3E0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		C65646632CA70E78007D940E /* XCLocalSwiftPackageReference "Packages/Features/Onboarding" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/Features/Onboarding;
+		};
+		C65646A72CA70F94007D940E /* XCLocalSwiftPackageReference "Packages/Core/PKSTheme" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/Core/PKSTheme;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C6F2B6932CAD208A00CB3E0B /* XCRemoteSwiftPackageReference "PKSDependencyEngine" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ohk/PKSDependencyEngine";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C65646CD2CA7F394007D940E /* OnboardingUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OnboardingUI;
+		};
+		C6B0167C2CAD1E4C003DA202 /* OnboardingProtocol */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C65646632CA70E78007D940E /* XCLocalSwiftPackageReference "Packages/Features/Onboarding" */;
+			productName = OnboardingProtocol;
+		};
+		C6B0167E2CAD1E4C003DA202 /* OnboardingUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C65646632CA70E78007D940E /* XCLocalSwiftPackageReference "Packages/Features/Onboarding" */;
+			productName = OnboardingUI;
+		};
+		C6B016802CAD1E4C003DA202 /* PKSTheme */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C65646A72CA70F94007D940E /* XCLocalSwiftPackageReference "Packages/Core/PKSTheme" */;
+			productName = PKSTheme;
+		};
+		C6F2B6942CAD209400CB3E0B /* PKSDependencyEngine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6F2B6932CAD208A00CB3E0B /* XCRemoteSwiftPackageReference "PKSDependencyEngine" */;
+			productName = PKSDependencyEngine;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C65646142CA7010F007D940E /* Project object */;
 }

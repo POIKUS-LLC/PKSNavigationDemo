@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  applestore
+//  OnboardingDev
 //
 //  Created by Ömer Hamid Kamışlı on 9/27/24.
 //
