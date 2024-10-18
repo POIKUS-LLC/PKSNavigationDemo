@@ -16,14 +16,23 @@ let package = Package(
     ],
     dependencies: [
         .package(name: "PKSTheme", path: "../Core/PKSTheme"),
+        .package(name: "PKSCore", path: "../Core/PKSCore"),
         .package(url: "https://github.com/ohk/PKSNavigation.git", exact: "1.0.0"),
+        .package(url: "https://github.com/kean/Nuke.git", exact: "12.8.0")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "ProductsUI",
-            dependencies: ["PKSTheme", "PKSNavigation", "ProductsProtocol"]
+            dependencies: [
+                "PKSTheme",
+                "PKSNavigation",
+                "ProductsProtocol",
+                "ProductEntities",
+                "PKSCore",
+                .product(name: "NukeUI", package: "Nuke")
+            ]
         ),
         .target(
             name: "ProductsProtocol",

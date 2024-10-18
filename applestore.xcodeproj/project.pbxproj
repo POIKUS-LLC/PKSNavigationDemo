@@ -12,6 +12,7 @@
 		C6B0167F2CAD1E4C003DA202 /* OnboardingUI in Frameworks */ = {isa = PBXBuildFile; productRef = C6B0167E2CAD1E4C003DA202 /* OnboardingUI */; };
 		C6B016812CAD1E4C003DA202 /* PKSTheme in Frameworks */ = {isa = PBXBuildFile; productRef = C6B016802CAD1E4C003DA202 /* PKSTheme */; };
 		C6F2B6952CAD209400CB3E0B /* PKSDependencyEngine in Frameworks */ = {isa = PBXBuildFile; productRef = C6F2B6942CAD209400CB3E0B /* PKSDependencyEngine */; };
+		C6F2B7752CB10AED00CB3E0B /* ProductsUI in Frameworks */ = {isa = PBXBuildFile; productRef = C6F2B7742CB10AED00CB3E0B /* ProductsUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6F2B7752CB10AED00CB3E0B /* ProductsUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +328,7 @@
 			);
 			name = ProductsDev;
 			packageProductDependencies = (
+				C6F2B7742CB10AED00CB3E0B /* ProductsUI */,
 			);
 			productName = ProductsDev;
 			productReference = C6F2B71C2CB0FBA600CB3E0B /* ProductsDev.app */;
@@ -376,6 +379,7 @@
 				C65646632CA70E78007D940E /* XCLocalSwiftPackageReference "Packages/Features/Onboarding" */,
 				C65646A72CA70F94007D940E /* XCLocalSwiftPackageReference "Packages/Core/PKSTheme" */,
 				C6F2B6932CAD208A00CB3E0B /* XCRemoteSwiftPackageReference "PKSDependencyEngine" */,
+				C6F2B7732CB1060E00CB3E0B /* XCRemoteSwiftPackageReference "Nuke" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C656461D2CA7010F007D940E /* Products */;
@@ -1009,6 +1013,14 @@
 				version = 1.0.0;
 			};
 		};
+		C6F2B7732CB1060E00CB3E0B /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = exactVersion;
+				version = 12.8.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1035,6 +1047,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C6F2B6932CAD208A00CB3E0B /* XCRemoteSwiftPackageReference "PKSDependencyEngine" */;
 			productName = PKSDependencyEngine;
+		};
+		C6F2B7742CB10AED00CB3E0B /* ProductsUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ProductsUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

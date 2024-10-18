@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import ProductsUI
 
 @main
 struct ProductsDevApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ProductHomePageView()
         }
     }
 }

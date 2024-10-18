@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public struct Product: Identifiable, Hashable, Equatable {
+public struct Product: Identifiable, Hashable, Equatable, Sendable {
     public var id: UUID
     
     public var image: URL?
@@ -28,6 +28,7 @@ public struct Product: Identifiable, Hashable, Equatable {
     ) {
         self.id = id
         self.image = image
+        self.name = name
         self.description = description
         self.startingPrice = startingPrice
         self.isNew = isNew
