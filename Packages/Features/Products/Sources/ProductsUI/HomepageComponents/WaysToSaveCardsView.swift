@@ -7,8 +7,11 @@
 
 import SwiftUI
 import ProductEntities
+import PKSNavigation
 
 struct WaysToSaveCardsView: View {
+    @EnvironmentObject var navigationManager: PKSNavigationManager
+    
     var cards: [WaysToSaveCard]
     var insidePadding: CGFloat = 16
     var listEndPadding: CGFloat = 16
@@ -25,9 +28,14 @@ struct WaysToSaveCardsView: View {
                 }
                 
                 ForEach(cards) { card in
-                    WaysToSaveCardView(card: card)
-                        .frame(width: 250)
-                        .padding(.trailing, 8)
+                    Button {
+                        navigationManager.navigate(to: ProductNavigationablePages.iPhone, presentation: .cover)
+                    } label: {
+                        WaysToSaveCardView(card: card)
+                            .frame(width: 250)
+                            .padding(.trailing, 8)
+                    }
+
                 }
                 
                 if listEndPadding > 0 {

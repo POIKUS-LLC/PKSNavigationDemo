@@ -15,7 +15,7 @@ let package = Package(
     ],
     dependencies: [
         .package(name: "PKSTheme", path: "../Core/PKSTheme"),
-        .package(url: "https://github.com/ohk/PKSNavigation.git", exact: "1.0.0"),
+        .package(url: "https://github.com/ohk/PKSNavigation.git", branch: "develop")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.

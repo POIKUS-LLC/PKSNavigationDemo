@@ -8,15 +8,22 @@
 import SwiftUI
 import ProductEntities
 import NukeUI
+import PKSNavigation
 
 struct DiscoveryCardsView: View {
+    @EnvironmentObject var navigationManager: PKSNavigationManager
     var highlightedCards: [DiscoveryCard]
     var carouselCards: [DiscoveryCard]
+    
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .leading, spacing: 8) {
                 ForEach(highlightedCards) { card in
-                    DiscoveryCardView(card: card)
+                    Button {
+                        navigationManager.navigate(to: ProductNavigationablePages.iPhone, presentation: .sheet)
+                    } label :{
+                        DiscoveryCardView(card: card)
+                    }
                 }
             }
             .padding()
@@ -27,9 +34,13 @@ struct DiscoveryCardsView: View {
                         .fill(Color.clear)
                         .frame(width: 16)
                     ForEach(carouselCards) { card in
-                        DiscoveryCardView(card: card)
-                            .frame(width: 380)
-                            .padding(.trailing, 16)
+                        Button {
+                            navigationManager.navigate(to: ProductNavigationablePages.iPhone)
+                        } label: {
+                            DiscoveryCardView(card: card)
+                                .frame(width: 380)
+                                .padding(.trailing, 16)
+                        }
                     }
                     Rectangle()
                         .fill(Color.clear)

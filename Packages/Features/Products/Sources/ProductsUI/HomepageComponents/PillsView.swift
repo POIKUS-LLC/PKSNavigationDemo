@@ -8,8 +8,10 @@
 import SwiftUI
 import ProductEntities
 import PKSCore
+import PKSNavigation
 
 struct PillsView: View {
+    @EnvironmentObject var navigationManager: PKSNavigationManager
     @State var pillSize: CGSize = .zero
     var pills: [Pill]
     var insidePadding: CGFloat = 16
@@ -26,9 +28,14 @@ struct PillsView: View {
                         .disabled(true)
                 }
                 ForEach(pills) { pill in
-                    PillView(pill: pill)
-                        .readSize(using: $pillSize)
-                        .padding(.trailing, pillSpacing)
+                    Button {
+                        navigationManager.navigate(to: ProductNavigationablePages.iPhone)
+                    } label: {
+                        PillView(pill: pill)
+                            .readSize(using: $pillSize)
+                            .padding(.trailing, pillSpacing)
+                    }
+
                 }
                 if listEndPadding > 0 {
                     Rectangle()

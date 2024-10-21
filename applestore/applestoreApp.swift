@@ -11,10 +11,17 @@ import PKSDependencyEngine
 import OnboardingProtocol
 import OnboardingUI
 import PKSNavigation
+import ProductsProtocol
+import ProductsUI
+import AccountProtocol
+import AccountUI
 
 @main
 struct applestoreApp: App {
+    @PKSRegisterDependency var accountManager: AccountManagerProtocol = AccountManager()
     @PKSRegisterDependency var onboardingManager: OnboardingManagerProtocol = OnboardingManager()
+    @PKSRegisterDependency var productManager: ProductsManagerProtocol = ProductManager()
+    
     @State var isLoaded: Bool = false
     
     

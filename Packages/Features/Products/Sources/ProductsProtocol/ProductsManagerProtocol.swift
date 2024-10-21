@@ -8,4 +8,5 @@
 import SwiftUI
 
 public protocol ProductsManagerProtocol {
+    @MainActor func getProductRootView() -> AnyView
 }

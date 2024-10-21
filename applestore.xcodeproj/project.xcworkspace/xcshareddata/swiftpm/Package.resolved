@@ -1,5 +1,4 @@
 {
-  "originHash" : "00b04f811d200a6a9ec61756ea1f2fa323c9ce8b5751533ea2d345fc1ea72d1a",
   "pins" : [
     {
       "identity" : "nuke",
@@ -18,16 +17,7 @@
         "revision" : "2a930e6cd3b8f8fb36164a900c9b3a097ef3877f",
         "version" : "1.0.0"
       }
-    },
-    {
-      "identity" : "pksnavigation",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/ohk/PKSNavigation.git",
-      "state" : {
-        "revision" : "ef0603f107bc64f452e30e14d9a0e92185ef330c",
-        "version" : "1.0.0"
-      }
     }
   ],
-  "version" : 3
+  "version" : 2
 }

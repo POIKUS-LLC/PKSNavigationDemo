@@ -6,10 +6,18 @@
 //
 
 import SwiftUI
+import PKSNavigation
+import ProductsProtocol
+import PKSDependencyEngine
 
 struct ProductsRootView: View {
+    @EnvironmentObject var navigationManager: PKSNavigationManager
+    @PKSDependency var productDependency: ProductsManagerProtocol
+    
     var body: some View {
-        Text("Hello, World!")
+        PKSNavigationContainer(navigationManager: navigationManager) {
+            productDependency.getProductRootView()
+        }
     }
 }
 

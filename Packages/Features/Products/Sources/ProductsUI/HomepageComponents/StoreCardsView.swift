@@ -8,8 +8,11 @@
 import SwiftUI
 import NukeUI
 import ProductEntities
+import PKSNavigation
 
 struct StoreCardsView: View {
+    @EnvironmentObject var navigationManager: PKSNavigationManager
+    
     @State var products: [Product]
     var insidePadding: CGFloat = 16
     var listEndPadding: CGFloat = 16
@@ -26,8 +29,12 @@ struct StoreCardsView: View {
                 }
                 
                 ForEach(products) { product in
-                    StoreCardView(product: product)
-                        .padding(.trailing, placardSpacing)
+                    Button {
+                        navigationManager.navigate(to: ProductNavigationablePages.iPhone, presentation: .sheet)
+                    } label: {
+                        StoreCardView(product: product)
+                            .padding(.trailing, placardSpacing)
+                    }
                 }
                 
                 if listEndPadding > 0 {

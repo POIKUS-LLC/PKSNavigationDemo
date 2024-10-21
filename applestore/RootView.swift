@@ -19,18 +19,20 @@ struct RootView: View {
     
     var body: some View {
         TabView {
-            ForYouRootView()
-                .environmentObject(forYouTabNavigation)
-                .tabItem {
-                    Label("For You", systemImage: "text.badge.star")
-                }
-            
             ProductsRootView()
                 .environmentObject(productsTabNavigation)
                 .tabItem {
                     Label("Products", systemImage: "macbook.and.iphone")
                 }
             
+            
+            ForYouRootView()
+                .environmentObject(forYouTabNavigation)
+                .tabItem {
+                    Label("For You", systemImage: "text.badge.star")
+                }
+            
+           
             ForYouRootView()
                 .environmentObject(goFurtherTabNavigation)
                 .tabItem {

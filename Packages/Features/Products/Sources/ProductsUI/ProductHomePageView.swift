@@ -7,8 +7,13 @@
 
 import SwiftUI
 import ProductEntities
+import PKSDependencyEngine
+import AccountProtocol
+
+
 
 public struct ProductHomePageView: View {
+    @PKSDependency var accountManager: any AccountManagerProtocol
     public init() {}
     
     public var body: some View {
@@ -23,6 +28,7 @@ public struct ProductHomePageView: View {
             Spacer(minLength: 60)
         }
         .background(Color.init(.systemGray6))
+        
     }
     
     private var header: some View {
@@ -31,16 +37,12 @@ public struct ProductHomePageView: View {
                 .font(.largeTitle)
                 .fontWeight(.bold)
             Spacer()
-            accountView
+            accountManager.getUserAvatar()
         }
         .padding(.horizontal)
     }
     
-    private var accountView: some View {
-        Circle()
-            .fill(Color.cyan)
-            .frame(width: 50, height: 50, alignment: .center)
-    }
+  
     
     private var accessories: some View {
         VStack(alignment: .leading){
