@@ -6,12 +6,22 @@
 //
 
 import SwiftUI
+import AccountUI
+import PKSNavigation
 
 @main
 struct AccountDevApp: App {
+    @StateObject var rootNavigationManager: PKSNavigationManager = .init(identifier: "Account")
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PKSNavigationContainer(
+                navigationManager: rootNavigationManager
+            ) {
+                
+                UserAvatar(initials: "JS")
+            }
+            
         }
     }
 }

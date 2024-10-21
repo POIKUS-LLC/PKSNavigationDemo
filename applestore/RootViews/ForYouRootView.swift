@@ -6,10 +6,15 @@
 //
 
 import SwiftUI
+import PKSNavigation
 
 struct ForYouRootView: View {
+    @EnvironmentObject var navigationManager: PKSNavigationManager
+    
     var body: some View {
-        Text("Hello, World!")
+        PKSNavigationContainer(navigationManager: navigationManager) {
+            Text("Hello World")
+        }
     }
 }
 

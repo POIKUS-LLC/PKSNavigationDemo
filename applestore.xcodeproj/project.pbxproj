@@ -11,7 +11,17 @@
 		C6B0167D2CAD1E4C003DA202 /* OnboardingProtocol in Frameworks */ = {isa = PBXBuildFile; productRef = C6B0167C2CAD1E4C003DA202 /* OnboardingProtocol */; };
 		C6B0167F2CAD1E4C003DA202 /* OnboardingUI in Frameworks */ = {isa = PBXBuildFile; productRef = C6B0167E2CAD1E4C003DA202 /* OnboardingUI */; };
 		C6B016812CAD1E4C003DA202 /* PKSTheme in Frameworks */ = {isa = PBXBuildFile; productRef = C6B016802CAD1E4C003DA202 /* PKSTheme */; };
+		C6BB23152CC6341E00DA8CBB /* AccountProtocol in Frameworks */ = {isa = PBXBuildFile; productRef = C6BB23142CC6341E00DA8CBB /* AccountProtocol */; };
+		C6BB23172CC6341E00DA8CBB /* AccountUI in Frameworks */ = {isa = PBXBuildFile; productRef = C6BB23162CC6341E00DA8CBB /* AccountUI */; };
+		C6BB23192CC6341E00DA8CBB /* PKSNavigation in Frameworks */ = {isa = PBXBuildFile; productRef = C6BB23182CC6341E00DA8CBB /* PKSNavigation */; };
+		C6BB231B2CC6341E00DA8CBB /* ProductsProtocol in Frameworks */ = {isa = PBXBuildFile; productRef = C6BB231A2CC6341E00DA8CBB /* ProductsProtocol */; };
+		C6BB231D2CC6341E00DA8CBB /* ProductsUI in Frameworks */ = {isa = PBXBuildFile; productRef = C6BB231C2CC6341E00DA8CBB /* ProductsUI */; };
+		C6EF78552CC4867700737ED9 /* AccountProtocol in Frameworks */ = {isa = PBXBuildFile; productRef = C6EF78542CC4867700737ED9 /* AccountProtocol */; };
+		C6EF78572CC4867700737ED9 /* AccountUI in Frameworks */ = {isa = PBXBuildFile; productRef = C6EF78562CC4867700737ED9 /* AccountUI */; };
+		C6EFD2E82CC4A01E00737ED9 /* AccountProtocol in Frameworks */ = {isa = PBXBuildFile; productRef = C6EFD2E72CC4A01E00737ED9 /* AccountProtocol */; };
+		C6EFD2EA2CC4A01E00737ED9 /* AccountUI in Frameworks */ = {isa = PBXBuildFile; productRef = C6EFD2E92CC4A01E00737ED9 /* AccountUI */; };
 		C6F2B6952CAD209400CB3E0B /* PKSDependencyEngine in Frameworks */ = {isa = PBXBuildFile; productRef = C6F2B6942CAD209400CB3E0B /* PKSDependencyEngine */; };
+		C6F2B7752CB10AED00CB3E0B /* ProductsUI in Frameworks */ = {isa = PBXBuildFile; productRef = C6F2B7742CB10AED00CB3E0B /* ProductsUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +48,6 @@
 		C65646B22CA7E0AC007D940E /* OnboardingDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnboardingDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F2B6A82CAD470500CB3E0B /* AccountDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccountDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F2B71C2CB0FBA600CB3E0B /* ProductsDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductsDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6F2B72A2CB1006900CB3E0B /* PKSCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = PKSCore; path = Packages/Core/PKSCore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -46,6 +55,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Core/PKSTheme,
+				Features/Account,
 				Features/Onboarding,
 			);
 			target = C656461B2CA7010F007D940E /* applestore */;
@@ -98,10 +108,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6BB231D2CC6341E00DA8CBB /* ProductsUI in Frameworks */,
+				C6BB23172CC6341E00DA8CBB /* AccountUI in Frameworks */,
 				C6B016812CAD1E4C003DA202 /* PKSTheme in Frameworks */,
 				C6F2B6952CAD209400CB3E0B /* PKSDependencyEngine in Frameworks */,
 				C6B0167D2CAD1E4C003DA202 /* OnboardingProtocol in Frameworks */,
+				C6BB23152CC6341E00DA8CBB /* AccountProtocol in Frameworks */,
 				C6B0167F2CAD1E4C003DA202 /* OnboardingUI in Frameworks */,
+				C6BB231B2CC6341E00DA8CBB /* ProductsProtocol in Frameworks */,
+				C6BB23192CC6341E00DA8CBB /* PKSNavigation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +146,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6EF78572CC4867700737ED9 /* AccountUI in Frameworks */,
+				C6EF78552CC4867700737ED9 /* AccountProtocol in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +155,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6EFD2EA2CC4A01E00737ED9 /* AccountUI in Frameworks */,
+				C6EFD2E82CC4A01E00737ED9 /* AccountProtocol in Frameworks */,
+				C6F2B7752CB10AED00CB3E0B /* ProductsUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +167,6 @@
 		C65646132CA7010F007D940E = {
 			isa = PBXGroup;
 			children = (
-				C6F2B72A2CB1006900CB3E0B /* PKSCore */,
 				C656461E2CA7010F007D940E /* applestore */,
 				C656462F2CA70110007D940E /* applestoreTests */,
 				C65646392CA70110007D940E /* applestoreUITests */,
@@ -213,6 +232,11 @@
 				C6B0167E2CAD1E4C003DA202 /* OnboardingUI */,
 				C6B016802CAD1E4C003DA202 /* PKSTheme */,
 				C6F2B6942CAD209400CB3E0B /* PKSDependencyEngine */,
+				C6BB23142CC6341E00DA8CBB /* AccountProtocol */,
+				C6BB23162CC6341E00DA8CBB /* AccountUI */,
+				C6BB23182CC6341E00DA8CBB /* PKSNavigation */,
+				C6BB231A2CC6341E00DA8CBB /* ProductsProtocol */,
+				C6BB231C2CC6341E00DA8CBB /* ProductsUI */,
 			);
 			productName = applestore;
 			productReference = C656461C2CA7010F007D940E /* applestore.app */;
@@ -304,6 +328,8 @@
 			);
 			name = AccountDev;
 			packageProductDependencies = (
+				C6EF78542CC4867700737ED9 /* AccountProtocol */,
+				C6EF78562CC4867700737ED9 /* AccountUI */,
 			);
 			productName = AccountDev;
 			productReference = C6F2B6A82CAD470500CB3E0B /* AccountDev.app */;
@@ -326,6 +352,9 @@
 			);
 			name = ProductsDev;
 			packageProductDependencies = (
+				C6F2B7742CB10AED00CB3E0B /* ProductsUI */,
+				C6EFD2E72CC4A01E00737ED9 /* AccountProtocol */,
+				C6EFD2E92CC4A01E00737ED9 /* AccountUI */,
 			);
 			productName = ProductsDev;
 			productReference = C6F2B71C2CB0FBA600CB3E0B /* ProductsDev.app */;
@@ -376,6 +405,7 @@
 				C65646632CA70E78007D940E /* XCLocalSwiftPackageReference "Packages/Features/Onboarding" */,
 				C65646A72CA70F94007D940E /* XCLocalSwiftPackageReference "Packages/Core/PKSTheme" */,
 				C6F2B6932CAD208A00CB3E0B /* XCRemoteSwiftPackageReference "PKSDependencyEngine" */,
+				C6F2B7732CB1060E00CB3E0B /* XCRemoteSwiftPackageReference "Nuke" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C656461D2CA7010F007D940E /* Products */;
@@ -1009,6 +1039,14 @@
 				version = 1.0.0;
 			};
 		};
+		C6F2B7732CB1060E00CB3E0B /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = exactVersion;
+				version = 12.8.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1031,10 +1069,50 @@
 			package = C65646A72CA70F94007D940E /* XCLocalSwiftPackageReference "Packages/Core/PKSTheme" */;
 			productName = PKSTheme;
 		};
+		C6BB23142CC6341E00DA8CBB /* AccountProtocol */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AccountProtocol;
+		};
+		C6BB23162CC6341E00DA8CBB /* AccountUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AccountUI;
+		};
+		C6BB23182CC6341E00DA8CBB /* PKSNavigation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PKSNavigation;
+		};
+		C6BB231A2CC6341E00DA8CBB /* ProductsProtocol */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ProductsProtocol;
+		};
+		C6BB231C2CC6341E00DA8CBB /* ProductsUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ProductsUI;
+		};
+		C6EF78542CC4867700737ED9 /* AccountProtocol */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AccountProtocol;
+		};
+		C6EF78562CC4867700737ED9 /* AccountUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AccountUI;
+		};
+		C6EFD2E72CC4A01E00737ED9 /* AccountProtocol */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AccountProtocol;
+		};
+		C6EFD2E92CC4A01E00737ED9 /* AccountUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AccountUI;
+		};
 		C6F2B6942CAD209400CB3E0B /* PKSDependencyEngine */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C6F2B6932CAD208A00CB3E0B /* XCRemoteSwiftPackageReference "PKSDependencyEngine" */;
 			productName = PKSDependencyEngine;
+		};
+		C6F2B7742CB10AED00CB3E0B /* ProductsUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ProductsUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

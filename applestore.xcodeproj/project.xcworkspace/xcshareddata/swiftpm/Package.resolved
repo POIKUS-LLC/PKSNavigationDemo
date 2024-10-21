@@ -1,6 +1,14 @@
 {
-  "originHash" : "7ea7edd2af637b28664ddb607e7e385047adb3c37e1fce53e5b6d1ef3075be33",
   "pins" : [
+    {
+      "identity" : "nuke",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kean/Nuke",
+      "state" : {
+        "revision" : "0ead44350d2737db384908569c012fe67c421e4d",
+        "version" : "12.8.0"
+      }
+    },
     {
       "identity" : "pksdependencyengine",
       "kind" : "remoteSourceControl",
@@ -9,16 +17,7 @@
         "revision" : "2a930e6cd3b8f8fb36164a900c9b3a097ef3877f",
         "version" : "1.0.0"
       }
-    },
-    {
-      "identity" : "pksnavigation",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/ohk/PKSNavigation.git",
-      "state" : {
-        "revision" : "ef0603f107bc64f452e30e14d9a0e92185ef330c",
-        "version" : "1.0.0"
-      }
     }
   ],
-  "version" : 3
+  "version" : 2
 }

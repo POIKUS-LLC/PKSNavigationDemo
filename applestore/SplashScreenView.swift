@@ -50,7 +50,7 @@ struct SplashScreenView: View {
                             }
                             timer.upstream.connect().cancel()
                         } else {
-                            completionAmount += 0.03
+                            completionAmount += 0.05
                         }
                     }
                 }
