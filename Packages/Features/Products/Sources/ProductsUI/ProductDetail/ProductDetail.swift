@@ -16,6 +16,8 @@ enum ProductDetailSheets: Identifiable, Hashable, Equatable {
         self.hashValue
     }
 }
+
+
 struct ProductDetail: View {
     @Environment(\.pksDismiss) var dismiss
     
@@ -28,12 +30,6 @@ struct ProductDetail: View {
     @State private var selectedConnectivity = -1
     @State private var selectedAppleCare = -1
 
-    let models = ["iPhone 16 Pro", "iPhone 16 Pro Max"]
-    let colors = ["Desert Titanium", "Natural Titanium", "White Titanium", "Black Titanium"]
-    let storageOptions = ["256GB", "512GB", "1TB"]
-    let paymentOptions = ["Full Price", "Monthly Installments", "iPhone Upgrade Program"]
-    let connectivityOptions = ["T-Mobile", "Replace on existing T-Mobile account", "Connect to any carrier later"]
-    let appleCareOptions = ["AppleCare+", "AppleCare+ with Theft and Loss", "No AppleCare+ coverage"]
 
     var body: some View {
         Section {

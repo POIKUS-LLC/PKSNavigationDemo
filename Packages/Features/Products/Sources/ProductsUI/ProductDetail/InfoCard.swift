@@ -12,6 +12,7 @@ struct InfoCard: View {
     var headline: String
     var subheadline: String
     var action: @MainActor () -> Void
+    
     var body: some View {
         HStack(alignment: .firstTextBaseline) {
             VStack(alignment: .leading) {
@@ -29,7 +30,7 @@ struct InfoCard: View {
         }
         .padding()
         .padding(.vertical, 12)
-        .background(Color.init(red: 232/255, green: 232/255, blue: 237/255))
-        .clipShape(.rect(cornerRadius: 12))
+        .background(Color(red: 232/255, green: 232/255, blue: 237/255))
+        .clipShape(RoundedRectangle(cornerRadius: 12))
     }
 }
