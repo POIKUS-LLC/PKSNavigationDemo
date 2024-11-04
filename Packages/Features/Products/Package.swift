@@ -17,7 +17,7 @@ let package = Package(
     dependencies: [
         .package(name: "PKSTheme", path: "../Core/PKSTheme"),
         .package(name: "PKSCore", path: "../Core/PKSCore"),
-        .package(url: "https://github.com/ohk/PKSNavigation.git", branch: "develop"),
+        .package(url: "https://github.com/POIKUS-LLC/PKSNavigation.git", branch: "develop"),
         .package(url: "https://github.com/kean/Nuke.git", exact: "12.8.0"),
         .package(url: "https://github.com/ohk/PKSDependencyEngine", exact: "1.0.0"),
         .package(name: "Account", path: "../Account")

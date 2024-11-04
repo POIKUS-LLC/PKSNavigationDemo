@@ -1,6 +1,5 @@
 # AppleStoreDemo
 
-
 ## 📖 Overview
 
 **AppleStoreDemo** is a mock Apple Store application designed to demonstrate the integration and capabilities of the **PKSNavigation** framework. This demo focuses on showcasing how to manage complex navigation flows, specifically:
@@ -25,26 +24,27 @@ By utilizing PKSNavigation, AppleStoreDemo ensures a clean, maintainable, and sc
 
 ### Onboarding
 
-| Onboarding Step 1 | Onboarding Step 2 | Onboarding Step 3 | Notification Request |
-| -- | -- | -- | -- |
-| <img src="Screenshots/Onboarding-First.png"> | <img src="Screenshots/Onboarding-Second.png"> | <img src="Screenshots/Onboarding-Third.png"> | <img src="Screenshots/Onboarding-Notifications.png">
+| Onboarding Step 1                            | Onboarding Step 2                             | Onboarding Step 3                            | Notification Request                                 |
+| -------------------------------------------- | --------------------------------------------- | -------------------------------------------- | ---------------------------------------------------- |
+| <img src="Screenshots/Onboarding-First.png"> | <img src="Screenshots/Onboarding-Second.png"> | <img src="Screenshots/Onboarding-Third.png"> | <img src="Screenshots/Onboarding-Notifications.png"> |
 
 #### Onboarding How we use your data
 
-| Main View | Detail View |
-| -- | -- |
-| <img src="Screenshots/Onboarding-How-we-use-your-data.png"> | <img src="Screenshots/Onboarding-How-we-use-your-data-detail.png">
+| Main View                                                   | Detail View                                                        |
+| ----------------------------------------------------------- | ------------------------------------------------------------------ |
+| <img src="Screenshots/Onboarding-How-we-use-your-data.png"> | <img src="Screenshots/Onboarding-How-we-use-your-data-detail.png"> |
 
 ### Product
 
 #### Product Homepage
+
 <img src="Screenshots/Product-Homepage.png" width="300">
 
 #### Product Detail
 
-| As a Stack Navigation | As a Sheet | As a FullScreenCover |
-| -- | -- | -- |
-| <img src="Screenshots/Product-Detail-Stack.png"> | <img src="Screenshots/Product-Detail-Sheet.png"> | <img src="Screenshots/Product-Detail-FSC.png">
+| As a Stack Navigation                            | As a Sheet                                       | As a FullScreenCover                           |
+| ------------------------------------------------ | ------------------------------------------------ | ---------------------------------------------- |
+| <img src="Screenshots/Product-Detail-Stack.png"> | <img src="Screenshots/Product-Detail-Sheet.png"> | <img src="Screenshots/Product-Detail-FSC.png"> |
 
 <b>Showing compare models as a sheet.</b>
 
@@ -54,10 +54,9 @@ By utilizing PKSNavigation, AppleStoreDemo ensures a clean, maintainable, and sc
 
 ### Account Detail
 
-| Account Detail | Account Detail Scroll | Account Detail Deeper Navigation |
-| -- | -- | -- |
-| <img src="Screenshots/Account-Detail.png"> | <img src="Screenshots/Account-Detail-Scroll.png"> | <img src="Screenshots/Account-Detail-Deeper.png">
-
+| Account Detail                             | Account Detail Scroll                             | Account Detail Deeper Navigation                  |
+| ------------------------------------------ | ------------------------------------------------- | ------------------------------------------------- |
+| <img src="Screenshots/Account-Detail.png"> | <img src="Screenshots/Account-Detail-Scroll.png"> | <img src="Screenshots/Account-Detail-Deeper.png"> |
 
 > More Pages Coming Soon!
 
@@ -76,19 +75,19 @@ Follow these instructions to set up and run the AppleStoreDemo project on your l
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/ohk/PKSNavigationDemo.git
+   git clone https://github.com/POIKUS-LLC/PKSNavigationDemo.git
    ```
 
 2. **Navigate to the Project Directory**
 
    ```bash
-   cd AppleStoreDemo
+   cd PKSNavigationDemo
    ```
 
 3. **Open the Project in Xcode**
 
    ```bash
-   open AppleStoreDemo.xcodeproj
+   open applestore.xcodeproj
    ```
 
 4. **Build and Run**
@@ -98,7 +97,6 @@ Follow these instructions to set up and run the AppleStoreDemo project on your l
 ## 🔧 Usage
 
 AppleStoreDemo demonstrates how to integrate and utilize **PKSNavigation** within a SwiftUI application. Below are key implementations and code snippets to guide you through the process.
-
 
 ## 🤝 Contributing
 
