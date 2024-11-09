@@ -1,5 +1,9 @@
 # AppleStoreDemo
 
+## Important Reminder
+
+We are not associated with Apple Inc. The AppleStoreDemo app is a mock application created solely to demonstrate the capabilities of the PKSNavigation framework. It is not endorsed, affiliated with, or sponsored by Apple in any way. This demo serves as a proof of concept to illustrate the power and flexibility of PKSNavigation in building sophisticated navigation systems within your applications.
+
 ## 📖 Overview
 
 **AppleStoreDemo** is a mock Apple Store application designed to demonstrate the integration and capabilities of the **PKSNavigation** framework. This demo focuses on showcasing how to manage complex navigation flows, specifically:
